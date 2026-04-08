@@ -271,7 +271,7 @@ export default function AboutPage({ onShopNow }) {
                   className="text-[28px] font-black leading-none"
                   style={{ fontFamily: "Syne, sans-serif" }}
                 >
-                  2019
+                  2026
                 </p>
                 <p
                   className="text-[11px] text-white/50 mt-1"
@@ -304,7 +304,7 @@ export default function AboutPage({ onShopNow }) {
                 className="text-[14px] text-[#6B7280] leading-relaxed"
                 style={{ fontFamily: "DM Sans, sans-serif" }}
               >
-                CleanHub started in 2019 when our founder Lena couldn't find a
+                ES SHOP started in 2026 when our founder Emma couldn't find a
                 single place to buy quality cleaning supplies online in South Africa.
                 What began as a small operation out of a Johannesburg garage has grown
                 into a fully-fledged e-commerce platform serving thousands of
@@ -316,22 +316,22 @@ export default function AboutPage({ onShopNow }) {
               >
                 We obsess over product quality, transparent pricing, and making sure
                 every order arrives exactly when you need it. Cleaning shouldn't be
-                complicated — and with CleanHub, it isn't.
+                complicated — and with ES SHOP, it isn't.
               </p>
               <div className="flex items-center gap-3 pt-2">
                 <div className="w-10 h-10 rounded-full overflow-hidden bg-[#F1F5F9]">
-                  <img
+                  {/* <img
                     src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&q=80"
-                    alt="Lena Fourie"
+                    alt="EMMA"
                     className="w-full h-full object-cover"
-                  />
+                  /> */}
                 </div>
                 <div>
                   <p
                     className="text-[13px] font-bold text-[#111]"
                     style={{ fontFamily: "DM Sans, sans-serif" }}
                   >
-                    Lena Fourie
+                    EMMA
                   </p>
                   <p
                     className="text-[11px] text-[#94A3B8]"
@@ -372,7 +372,7 @@ export default function AboutPage({ onShopNow }) {
       </section>
 
       {/* ── Team ── */}
-      <section className="py-20 px-6">
+      {/* <section className="py-20 px-6">
         <div className="max-w-[1280px] mx-auto">
           <div className="mb-12">
             <p
@@ -394,7 +394,7 @@ export default function AboutPage({ onShopNow }) {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── Testimonials ── */}
       <section className="py-20 px-6 bg-white border-t border-[#F1F5F9]">

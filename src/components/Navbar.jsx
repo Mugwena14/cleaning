@@ -20,15 +20,12 @@ export default function Navbar({ cartCount = 0, onCartOpen, onSearchOpen, active
     return () => window.removeEventListener("resize", handler);
   }, []);
 
-  // ── IntersectionObserver — watch sections and update active nav link ───────
   useEffect(() => {
-    // Only run on the Home page — About page manages its own state
     if (activePage !== "Home") {
       setActiveSection("About");
       return;
     }
 
-    // Map section IDs → nav labels
     const sectionMap = {
       hero:    "Home",
       shop:    "Shop",
