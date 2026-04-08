@@ -1,14 +1,12 @@
 import { useState } from "react";
-import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, Tag, PackageSearch, Lightbulb, Sparkles } from "lucide-react";
 
 // ── Perk Pill ─────────────────────────────────────────────────────────────────
 
-function Perk({ emoji, label }) {
+function Perk({ icon: Icon, label }) {
   return (
-    <div
-      className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-1.5"
-    >
-      <span className="text-[14px]">{emoji}</span>
+    <div className="flex items-center gap-2 bg-white/10 hover:bg-white/15 rounded-full px-3.5 py-1.5 transition-colors duration-200">
+      <Icon size={13} strokeWidth={2} className="text-white/60 shrink-0" />
       <span
         className="text-[12px] text-white/70 font-medium"
         style={{ fontFamily: "DM Sans, sans-serif" }}
@@ -39,24 +37,25 @@ export default function Newsletter() {
       setStatus("error");
       return;
     }
-
     setStatus("loading");
     setErrorMsg("");
-
-    // Simulate API call
-    setTimeout(() => {
-      setStatus("success");
-    }, 1000);
+    setTimeout(() => setStatus("success"), 1000);
   };
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") handleSubmit();
   };
 
+  const perks = [
+    { icon: Tag,           label: "Exclusive deals"  },
+    { icon: PackageSearch, label: "Restock alerts"   },
+    { icon: Lightbulb,     label: "Cleaning tips"    },
+  ];
+
   return (
     <section className="bg-[#111] py-20 px-6 overflow-hidden relative">
 
-      {/* ── Subtle background texture ── */}
+      {/* ── Subtle dot texture ── */}
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
@@ -78,7 +77,7 @@ export default function Newsletter() {
             {/* Eyebrow */}
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-5">
               <div className="w-5 h-5 rounded-md bg-white/10 flex items-center justify-center">
-                <Sparkles size={11} strokeWidth={2} className="text-white/60" />
+                <Sparkles size={11} strokeWidth={2} className="text-white/50" />
               </div>
               <span
                 className="text-[11px] font-semibold text-white/40 uppercase tracking-[2px]"
@@ -109,15 +108,14 @@ export default function Newsletter() {
 
             {/* Perks */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-2">
-              <Perk emoji="🎁" label="Exclusive deals" />
-              <Perk emoji="📦" label="Restock alerts" />
-              <Perk emoji="🧹" label="Cleaning tips" />
+              {perks.map(({ icon, label }) => (
+                <Perk key={label} icon={icon} label={label} />
+              ))}
             </div>
           </div>
 
           {/* ── Right: Form ── */}
           <div className="flex-1 w-full max-w-md">
-
             {status === "success" ? (
               /* ── Success state ── */
               <div className="flex flex-col items-center justify-center gap-4 py-10 text-center">

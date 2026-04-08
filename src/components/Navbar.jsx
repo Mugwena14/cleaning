@@ -41,7 +41,7 @@ export default function Navbar({ cartCount = 0, onCartOpen, onSearchOpen, active
           {/* Logo */}
           <button onClick={() => handleNavClick("Home")} className="flex items-center gap-1 select-none">
             <span className="text-[22px] font-black tracking-tight text-[#111]" style={{ fontFamily: "Syne, sans-serif" }}>
-              Clean<span className="text-[#111]/30">Hub</span>
+              ES<span className="text-[#111]/30"> SHOP</span>
             </span>
           </button>
 

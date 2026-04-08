@@ -66,9 +66,9 @@ export default function FeaturedStrip({ onOptions, onAddToCart }) {
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-3">
             {/* Accent icon */}
-            <div className="w-8 h-8 rounded-lg bg-[#111] flex items-center justify-center">
+            {/* <div className="w-8 h-8 rounded-lg bg-[#111] flex items-center justify-center">
               <Sparkles size={15} strokeWidth={2} className="text-white" />
-            </div>
+            </div> */}
             <div>
               <h2
                 className="text-[24px] font-black text-[#111] leading-tight"

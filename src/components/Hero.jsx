@@ -17,7 +17,7 @@ export default function Hero({ onSearch }) {
 
       {/* ── Background Image ── */}
       <img
-        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=85"
+        src="https://res.cloudinary.com/dkmzveqce/image/upload/v1775607983/giorgio-trovato-XxAy813D66I-unsplash_rmi0ms.jpg"
         alt="hero background"
         className="absolute inset-0 w-full h-full object-cover opacity-50 scale-105"
         style={{ transition: "transform 8s ease", transformOrigin: "center" }}
