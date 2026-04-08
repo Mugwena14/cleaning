@@ -76,9 +76,9 @@ export default function Newsletter() {
 
             {/* Eyebrow */}
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-5">
-              <div className="w-5 h-5 rounded-md bg-white/10 flex items-center justify-center">
+              {/* <div className="w-5 h-5 rounded-md bg-white/10 flex items-center justify-center">
                 <Sparkles size={11} strokeWidth={2} className="text-white/50" />
-              </div>
+              </div> */}
               <span
                 className="text-[11px] font-semibold text-white/40 uppercase tracking-[2px]"
                 style={{ fontFamily: "DM Sans, sans-serif" }}
