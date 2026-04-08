@@ -186,7 +186,7 @@ export default function Footer({ onNavigate }) {
             className="text-[12px] text-[#CBD5E1]"
             style={{ fontFamily: "DM Sans, sans-serif" }}
           >
-            © {new Date().getFullYear()} CleanHub. All rights reserved.
+            © {new Date().getFullYear()} ES Shop. All rights reserved.
           </p>
 
           {/* Legal links */}
